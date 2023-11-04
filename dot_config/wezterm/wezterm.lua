@@ -17,7 +17,7 @@ config.color_scheme = 'Catppuccin Mocha'
 
 -- config.font = wezterm.font 'Fira Code'
 config.font = wezterm.font 'Jetbrains Mono'
-config.font_size = 14
+config.font_size = 16
 
 -- Title bar
 config.integrated_title_button_color = '#1e1e2e'
