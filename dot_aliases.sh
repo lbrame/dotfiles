@@ -79,7 +79,7 @@ if [[ $(grep -i archlinux /etc/os-release) ]]; then
 
 # Media
 alias mp3dl='yt-dlp --extract-audio --audio-format mp3'
-alias oggdl='yt-dlp -extract-audio --audio-format ogg --audio-quality 5 -i'
+    alias audiodl='yt-dlp -x -f bestaudio'
 
 # Shortcuts
 alias edit_zsh_conf="$EDITOR ~.zhsrc"
