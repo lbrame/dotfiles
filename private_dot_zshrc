@@ -1,5 +1,5 @@
 # Personal configuration
-source ~/.profile
+source ~/.zprofile
 source ~/.aliases.sh
 
 # Start configuration added by Zim install {{{
