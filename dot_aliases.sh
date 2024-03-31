@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #################
 # Shell aliases #
 #################
@@ -20,12 +18,14 @@ alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor
 alias gitkraken="flatpak run com.axosoft.GitKraken"
 
 # Abbreviations
+alias sd='cd'
 alias untar='tar -zxvf'
 alias l="ls --color=never"
 alias c="clear"
 alias open="xdg-open"
 alias fm="xdg-open ."
 alias tgdb="gdb --tui"
+alias fcd="cd ~ && cd \$(find * -type d | fzf)"
 
 # SSH
 alias start_ssh_agent="eval `ssh-agent -s`"
