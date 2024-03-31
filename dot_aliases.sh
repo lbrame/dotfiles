@@ -26,7 +26,7 @@ alias fm="xdg-open ."
 alias tgdb="gdb --tui"
 
 sd(){
-    cd "$(find * -type d | fzf)"
+    cd ~ && cd "$(find * -type d | fzf)"
 }
 
 # SSH
