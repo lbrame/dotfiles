@@ -24,7 +24,10 @@ alias c="clear"
 alias open="xdg-open"
 alias fm="xdg-open ."
 alias tgdb="gdb --tui"
-alias sd="cd ~ && cd \$(find * -type d | fzf)"
+
+sd(){
+    cd "$(find * -type d | fzf)"
+}
 
 # SSH
 alias start_ssh_agent="eval `ssh-agent -s`"
