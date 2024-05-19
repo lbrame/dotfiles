@@ -6,15 +6,11 @@
 alias ubuntufocalbox="distrobox enter ubuntufocalbox"
 
 # Redefinitions
-alias okular="QT_QPA_PLATFORM=XCB QT_QPA_PLATFORMTHEME=Breeze QT_STYLE_OVERRIDE=Breeze okular"
-# alias tree="tree -C"
-# alias ls="ls --color=auto"
-# alias grep="grep --color=always"
-alias docker=podman
+#alias docker=podman
 
 # Application shortcuts
 alias scrcpy_x11="env SDL_VIDEODRIVER=X11 scrcpy"
-alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor=1.5"
+# alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor=1.5"
 alias gitkraken="flatpak run com.axosoft.GitKraken"
 
 # Abbreviations
@@ -43,14 +39,14 @@ alias gl="git log --oneline --decorate --all --graph"
 
 ### Git: account management ###
 ## Set private account
-function gitprivate() {
-    export GIT_SSH_COMMAND='ssh -i "~/.ssh/id_ed25519"'
-}
+#function gitprivate() {
+#    export GIT_SSH_COMMAND='ssh -i "~/.ssh/id_ed25519"'
+#}
 
 ## Set public account
-function gitpublic() {
-    export GIT_SSH_COMMAND='ssh -i "~/.ssh/id_ed25519_p"'
-}
+#function gitpublic() {
+#    export GIT_SSH_COMMAND='ssh -i "~/.ssh/id_ed25519_p"'
+#}
 
 # Audio
 alias fixalsa="alsactl restore"
@@ -69,9 +65,9 @@ alias performance="sudo cpupower frequency-set -g performance"
 alias powersave="sudo cpupower frequency-set -g powersave"
 
 # KDE Plasma
-if [[ "$XDG_CURRENT_DESKTOP" == "KDE" ]]; then
-	alias fixnum="killall -9 kglobalaccel5 && kglobalaccel5 &";
-fi
+#if [[ "$XDG_CURRENT_DESKTOP" == "KDE" ]]; then
+#	alias fixnum="killall -9 kglobalaccel5 && kglobalaccel5 &";
+#fi
 
 # Pacman
 if [[ $(grep -i archlinux /etc/os-release) ]]; then
