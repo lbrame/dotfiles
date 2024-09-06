@@ -10,6 +10,8 @@ export PATH="$PATH:/home/luca/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:/home/luca/bin/clones/sortphotos/src"
+export PATH="$PATH:/home/luca/Android/Sdk/platform-tools"
+export PATH="$PATH:/home/luca/Android/Sdk/cmdline-tools/latest/bin"
 
 # Added by Toolbox App
 export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"
