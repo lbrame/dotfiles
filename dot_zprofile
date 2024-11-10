@@ -12,6 +12,8 @@ export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:/home/luca/bin/clones/sortphotos/src"
 export PATH="$PATH:/home/luca/Android/Sdk/platform-tools"
 export PATH="$PATH:/home/luca/Android/Sdk/cmdline-tools/latest/bin"
+export PATH="$PATH:/home/luca/bin/flutter_linux_3.24.2-stable/flutter/bin"
+export PATH="$PATH:/home/luca/code/learn/learn_osdev/cross_compiler/bin/bin"
 
 # Added by Toolbox App
 export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"
