@@ -36,6 +36,12 @@ zmodule asciiship
 # Configures fzf for faster fetching of files and directories names.
 zmodule fzf
 
+# Use zoxide to cd into frequently accessed directories more quickly.
+zmodule kiesman99/zim-zoxide
+
+# zmodule kiesman99/zim-zoxide
+zmodule archive
+
 #
 # Completion
 #
