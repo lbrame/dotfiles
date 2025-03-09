@@ -10,6 +10,7 @@ alias ubuntufocalbox="distrobox enter ubuntufocalbox"
 
 # Application shortcuts
 alias scrcpy_x11="env SDL_VIDEODRIVER=X11 scrcpy"
+alias dmeld="GTK_THEME=Adwaita:dark meld"
 # alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor=1.5"
 alias gitkraken="flatpak run com.axosoft.GitKraken"
 
@@ -24,6 +25,9 @@ alias tgdb="gdb --tui"
 sd(){
     cd ~ && cd "$(find * -type d | fzf)"
 }
+
+# ROCM
+alias fixrocm="export HSA_OVERRIDE_GFX_VERSION=11.0.0"
 
 # SSH
 alias start_ssh_agent="eval `ssh-agent -s`"
