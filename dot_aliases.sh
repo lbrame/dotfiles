@@ -13,6 +13,7 @@ alias scrcpy_x11="env SDL_VIDEODRIVER=X11 scrcpy"
 alias dmeld="GTK_THEME=Adwaita:dark meld"
 # alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor=1.5"
 alias gitkraken="flatpak run com.axosoft.GitKraken"
+alias zola="flatpak run org.getzola.zola"
 
 # Abbreviations
 alias untar='tar -zxvf'
