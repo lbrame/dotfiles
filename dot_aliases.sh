@@ -13,7 +13,8 @@ alias scrcpy_x11="env SDL_VIDEODRIVER=X11 scrcpy"
 alias dmeld="GTK_THEME=Adwaita:dark meld"
 # alias spotify_scaled="flatpak run com.spotify.Client --force-device-scale-factor=1.5"
 alias gitkraken="flatpak run com.axosoft.GitKraken"
-alias zola="flatpak run org.getzola.zola"
+alias neovide="/home/luca/AppImages/neovide.appimage"
+alias lg="lazygit"
 
 # Abbreviations
 alias untar='tar -zxvf'
@@ -26,6 +27,16 @@ alias tgdb="gdb --tui"
 sd(){
     cd ~ && cd "$(find * -type d | fzf)"
 }
+
+# yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 
 # ROCM
 alias fixrocm="export HSA_OVERRIDE_GFX_VERSION=11.0.0"

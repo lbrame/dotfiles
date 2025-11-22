@@ -3,7 +3,6 @@ export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
 # PATH
-export PATH="$PATH:/home/luca/bin/flutter/bin"
 export PATH="$PATH:/home/luca/bin/scripts"
 export PATH="$PATH:/home/luca/.local/bin"
 export PATH="$PATH:/home/luca/bin"
@@ -12,9 +11,8 @@ export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:/home/luca/bin/clones/sortphotos/src"
 export PATH="$PATH:/home/luca/Android/Sdk/platform-tools"
 export PATH="$PATH:/home/luca/Android/Sdk/cmdline-tools/latest/bin"
-export PATH="$PATH:/home/luca/bin/flutter_linux_3.24.2-stable/flutter/bin"
-export PATH="$PATH:/home/luca/code/learn/learn_osdev/cross_compiler/bin/bin"
 export PATH="$PATH:/home/luca/bin/mathematica"
+export PATH="$PATH:/home/luca/.local/share/mise/shims"
 
 # Added by Toolbox App
 export PATH="$PATH:/home/luca/.local/share/JetBrains/Toolbox/scripts"

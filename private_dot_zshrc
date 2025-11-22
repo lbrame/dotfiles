@@ -131,13 +131,14 @@ unset key
 # Personal configuration
 source ~/.zprofile
 source ~/.aliases.sh
+source ~/.ts_autocomplete.zsh
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /home/luca/.dart-cli-completion/zsh-config.zsh ]] && . /home/luca/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
-
+# gvm integration
 [[ -s "/home/luca/.gvm/scripts/gvm" ]] && source "/home/luca/.gvm/scripts/gvm"
 
 # pnpm
@@ -151,6 +152,7 @@ esac
 # bun completions
 [ -s "/home/luca/.bun/_bun" ] && source "/home/luca/.bun/_bun"
 
-# bun
+# bun variables
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(mise activate zsh)"
